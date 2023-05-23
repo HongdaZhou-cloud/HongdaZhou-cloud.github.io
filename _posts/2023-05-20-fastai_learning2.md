@@ -54,6 +54,6 @@ learn.fine_tune(20)
 ```
 
 
-### Step 3: design or describe the loss function
+### Step 3: Design or describe the loss function
 
 
