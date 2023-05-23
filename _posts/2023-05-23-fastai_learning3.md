@@ -3,7 +3,7 @@
 
 ## Build my own model to identify ten animals
 
-This blog is the based on the results gotten from "Fastai Learning Blog (2)". Two methods: Confusion matrices and t-SNE are introduced here in detail to analyse the data.
+This blog is the based on the results gotten from "Fastai Learning Blog (2)". Two methods: Confusion matrices and t-SNE, are introduced here in detail to analyse the data.
 
 ### Step 4: Analyse the results
 
@@ -12,18 +12,20 @@ A confusion matrix is a tabular representation that summarizes the performance o
 
 This is a typical confusion matrix:
 
-<img width="255" alt="2023-05-23_212831" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/1dd2bd38-4438-4aa1-90d3-c067fa30d847">
+<img width="500" alt="2023-05-23_212831" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/1dd2bd38-4438-4aa1-90d3-c067fa30d847">
 
-The column labels “Actually Positive” and “Actually Negative” refer to the ground-truth labels in your data set, i.e. whether a handwritten digit is truly a 1 or a 0, whether a patient was truly diagnosed with a disease (1) or not (0), whether a chest x-ray actually shows pneumonia (1) or not (0), etc.
+The column labels “Actually Positive” and “Actually Negative” represent the ground-truth labels in data set, and the row labels “Predicted Positive” and “Predicted Negative” refer to the model’s predictions, i.e. what model thinks the label is.
 
-The row labels “Predicted Positive” and “Predicted Negative” refer to your model’s predictions, i.e. what your model thinks the label is.
+What's more, the values in the confusion matrix have the following meanings:
 
-True Positive (TP): The number of samples that are correctly predicted as positive.
-True Negative (TN): The number of samples that are correctly predicted as negative.
-False Positive (FP): The number of samples that are incorrectly predicted as positive (also known as a Type I error).
-False Negative (FN): The number of samples that are incorrectly predicted as negative (also known as a Type II error).
+|Value| Meaning |
+|-|-|
+|True Positive (TP)| The number of samples that are correctly predicted as positive. |
+|True Negative (TN)| The number of samples that are correctly predicted as negative. |
+|False Positive (FP)| The number of samples that are incorrectly predicted as positive. |
+|False Negative (FN)| The number of samples that are incorrectly predicted as negative. | 
 
-The confusion matrix provides valuable information about the performance of a classification model. It allows you to assess the accuracy, precision, recall, and other evaluation metrics derived from these counts. It is particularly useful when dealing with imbalanced datasets, where the distribution of classes is uneven.
+The confusion matrix provides valuable information about the performance of a classification model. It allows us to assess the accuracy, precision, recall, and other evaluation metrics derived from these counts.
 
 #### t-SNE:
 t-SNE (t-Distributed Stochastic Neighbor Embedding) is a dimensionality reduction technique that is commonly used for visualizing high-dimensional data in a lower-dimensional space, typically 2D or 3D. It aims to preserve the local structure of the data points while revealing global patterns and relationships.
