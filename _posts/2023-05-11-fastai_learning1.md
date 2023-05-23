@@ -10,7 +10,7 @@ Neural networks, specifically, artificial neural networks (ANNs)—mimic the hum
 
 Here, "x" presents inputs; "w" is the weight for the respective inputs and "bias" is the bias or threshold.
 
-If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network. Now, imagine the above process being repeated multiple times for a single decision as neural networks tend to have multiple “hidden” layers as part of deep learning algorithms. Each hidden layer has its own activation function, potentially passing information from the previous layer into the next one. Once all the outputs from the hidden layers are generated, then they are used as inputs to calculate the final output of the neural network.
+If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network. Neural networks tend to have multiple “hidden” layers as part of deep learning algorithms, and each hidden layer has its own activation function.
 
 ### Deep learning:
 
