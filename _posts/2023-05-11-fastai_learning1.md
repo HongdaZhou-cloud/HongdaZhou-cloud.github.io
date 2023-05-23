@@ -36,6 +36,8 @@ The basic steps of this lesson are:
 
 The bird and forest photoes are required to be searched. Firstly, we start by getting URLs from a search, and then save each group of photos to a different folder.
 
+<img width="403" alt="2023-05-23_123051" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/3ed8707a-eb48-4539-a2b6-56113a2264f0">
+
 
 ### Step 2: Train our model
 
