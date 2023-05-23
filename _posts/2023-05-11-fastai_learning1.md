@@ -36,8 +36,23 @@ The basic steps of this lesson are:
 
 The bird and forest photoes are required to be searched. Firstly, we start by getting URLs from a search, and then save each group of photos to a different folder.
 
-<img width="403" alt="2023-05-23_123051" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/3ed8707a-eb48-4539-a2b6-56113a2264f0">
+```python
+from fastdownload import download_url
+dest = 'bird.jpg'
+download_url(urls[0], dest, show_progress=False)
 
+from fastai.vision.all import *
+im = Image.open(dest)
+im.to_thumb(256,256)
+```
+<img width="191" alt="2023-05-23_165010" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/7cb9c0e3-aa52-450b-8511-642585449b6b">
+
+```python
+download_url(search_images('forest photos', max_images=1)[0], 'forest.jpg', show_progress=False)
+Image.open('forest.jpg').to_thumb(256,256)
+```
+
+<img width="189" alt="2023-05-23_165022" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/e2c17980-ca83-474f-bb32-46b8928bb1ec">
 
 ### Step 2: Train our model
 
@@ -55,7 +70,7 @@ dls = DataBlock(
 
 dls.show_batch(max_n=20)
 ```
-Here is the meaning of each DataBlock parameter:
+Here is the meaning of each DataBlock parameter (see https://docs.fast.ai/data.load.html in detail):
 
 |Parameter| Explanation |
 |-|-|
