@@ -12,7 +12,7 @@ A confusion matrix is a tabular representation that summarizes the performance o
 
 This is a typical confusion matrix:
 
-<img width="500" alt="2023-05-23_212831" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/1dd2bd38-4438-4aa1-90d3-c067fa30d847">
+<img width="380" alt="2023-05-23_212831" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/1dd2bd38-4438-4aa1-90d3-c067fa30d847">
 
 The column labels “Actually Positive” and “Actually Negative” represent the ground-truth labels in data set, and the row labels “Predicted Positive” and “Predicted Negative” refer to the model’s predictions, i.e. what model thinks the label is.
 
@@ -44,7 +44,28 @@ The t-SNE algorithm works by constructing a probability distribution over pairs 
 
 After obtaining the t-SNE embedding, we can visualize it using plotting libraries to explore the structure and relationships of data in a lower-dimensional space.
 
+Specially, for the code in fastai:
 
+```python
+# get the input data
+data, _ = learn.get_preds(dl=dls.valid)
+
+# low-dimensional embedding
+tsne = TSNE(n_components=2)
+embedding = tsne.fit_transform(data)
+
+# get the target labels
+targets = [str(dls.vocab[x[1]]) for x in dls.valid_ds]
+target_labels = LabelEncoder().fit_transform(targets)
+
+# plot the result
+plt.scatter(embedding[:, 0], embedding[:, 1], c=target_labels)
+plt.title('t-SNE')
+plt.xlabel('Dimension 1')
+plt.ylabel('Dimension 2')
+plt.show()
+```
+We can get the result:
 
 
 
