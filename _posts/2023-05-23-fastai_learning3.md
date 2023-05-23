@@ -27,6 +27,16 @@ What's more, the values in the confusion matrix have the following meanings:
 
 The confusion matrix provides valuable information about the performance of a classification model. It allows us to assess the accuracy, precision, recall, and other evaluation metrics derived from these counts.
 
+Specially, for the code in fastai:
+
+```python
+interp = ClassificationInterpretation.from_learner(learn)
+interp.plot_confusion_matrix()
+```
+We can get the result:
+
+<img width="287" alt="2023-05-23_215512" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/feeb7c0e-e809-4e63-9905-264898d45e96">
+
 #### t-SNE:
 t-SNE (t-Distributed Stochastic Neighbor Embedding) is a dimensionality reduction technique that is commonly used for visualizing high-dimensional data in a lower-dimensional space, typically 2D or 3D. It aims to preserve the local structure of the data points while revealing global patterns and relationships.
 
