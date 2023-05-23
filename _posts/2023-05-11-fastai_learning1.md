@@ -18,15 +18,30 @@ The “deep” in deep learning is referring to the depth of layers in a neural 
 
 <img width="374" alt="2023-05-23_112156" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/bf2b688c-e4d9-45f3-ae43-a8b98aa8aed8">
 
-## Fastai
 
-- Introduction
-fastai is a deep learning library based on Python language and PyTorch library. It provides practitioners with high-level components that can quickly and easily provide state-of-the-art results in standard deep learning domains, and provides researchers with low-level components that can be mixed and matched to build new approaches. The resouce in detail can be found on the fastai website in https://docs.fast.ai/.
+## Fastai introduction
+
+fastai is a deep learning library based on Python language and PyTorch library. It provides components that can not only quickly provide results in standard deep learning domains but also allow it to be mixed to build new approaches. The resouce in detail can be found on the fastai website in https://docs.fast.ai/.
 
 
+## First lesson: is it a bird?
+
+The basic steps of this lesson are:
+
+1. Use DuckDuckGo to search for images of "bird photos" and "forest photos"
+1. Fine-tune a pretrained neural network to recognise these two groups
+1. Try running this model on a picture of a bird and see if it works.
+
+### Step 1: Search for images
+
+The bird and forest photoes are required to be searched. Firstly, we start by getting URLs from a search, and then save each group of photos to a different folder.
+
+
+### Step 2: Train our model
 
 <img width="826" alt="2023-05-23_111540" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/2a60718d-977a-4c15-9061-e5af0538f1ef">
 
 
+### Step 3: Use our model 
 
 <img width="534" alt="2023-05-23_111136" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/d8a9cfac-e08e-4c1b-b853-07e397f6be0a">
