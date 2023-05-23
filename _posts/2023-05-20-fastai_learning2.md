@@ -52,8 +52,25 @@ After that, we can train our model.
 learn = vision_learner(dls, resnet18, metrics=error_rate)
 learn.fine_tune(20)
 ```
+We cansee the results with the code.
 
+```python
+learn.show_results(max_n=16)
+```
+<img width="365" alt="2023-05-24_001735" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/6786d4e0-4052-4613-b279-84524755e763">
+
+And view the loss images.
+
+```python
+interp = Interpretation.from_learner(learn)
+interp.plot_top_losses(16)
+```
+<img width="385" alt="2023-05-24_001712" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/65529cf5-d283-46ed-a56d-cfb9964f578e">
 
 ### Step 3: Design or describe the loss function
 
+A loss function (also known as a cost function or objective function) is a mathematical function that quantifies the discrepancy between predicted and true values. It measures the error or loss incurred by a model's predictions and is used to guide the learning or optimization process.
 
+The goal of training a machine learning model is to minimize the loss function, which implies minimizing the discrepancy between predicted and true values. By adjusting the model's parameters or weights, the loss function is minimized, leading to better predictions.
+
+The choice of a loss function depends on the specific task at hand. Different machine learning tasks, such as classification, regression, or generative modeling, require different types of loss functions.
