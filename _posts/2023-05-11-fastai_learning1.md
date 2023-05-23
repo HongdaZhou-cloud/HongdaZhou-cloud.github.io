@@ -24,7 +24,7 @@ The “deep” in deep learning is referring to the depth of layers in a neural 
 fastai is a deep learning library based on Python language and PyTorch library. It provides components that can not only quickly provide results in standard deep learning domains but also allow it to be mixed to build new approaches. The resouce in detail can be found on the fastai website in https://docs.fast.ai/.
 
 
-## First lesson: is it a bird?
+## First fastai lesson: is it a bird?
 
 The basic steps of this lesson are:
 
