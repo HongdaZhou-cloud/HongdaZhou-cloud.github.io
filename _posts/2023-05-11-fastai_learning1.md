@@ -76,7 +76,7 @@ It works as below:
 
 <img width="826" alt="2023-05-23_111540" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/2a60718d-977a-4c15-9061-e5af0538f1ef">
 
-Here, we use the inputs and weights to get the final result, and then calculate the loss function to go back and keeping adjust the weights. The model training is not finished until we get very small loss.
+Here, we use the inputs and weights to get the final results, and then calculate the loss function to go back and keeping adjust the weights. The model training is not finished until we get very small loss.
 
 ### Step 3: Use our model 
 Finally, use the model we gotten before to identify if a specific photo is a bird.
