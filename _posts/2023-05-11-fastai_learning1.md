@@ -1,4 +1,32 @@
 # Fastai Learning Blog (1)
-##Introduction to neural network
 
-##Fastai
+
+## Neural network and deep learning
+### Neural network:
+
+Neural networks, specifically, artificial neural networks (ANNs)—mimic the human brain through a set of algorithms. At a basic level, a neural network is comprised of four main components: inputs, weights, a bias or threshold, and an output. Similar to linear regression, the algebraic formula would look something like this:
+
+<img width="390" alt="2023-05-23_113145" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/6c045528-f714-470e-9e1b-b52cc846b6cc">
+
+Here, "x" presents inputs; "w" is the weight for the respective inputs and "bias" is the bias or threshold.
+
+If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network. Now, imagine the above process being repeated multiple times for a single decision as neural networks tend to have multiple “hidden” layers as part of deep learning algorithms. Each hidden layer has its own activation function, potentially passing information from the previous layer into the next one. Once all the outputs from the hidden layers are generated, then they are used as inputs to calculate the final output of the neural network.
+
+### Deep learning:
+
+The “deep” in deep learning is referring to the depth of layers in a neural network. A neural network that consists of more than three layers—which would be inclusive of the inputs and the output—can be considered a deep learning algorithm. This is generally represented using the following diagram:
+
+<img width="374" alt="2023-05-23_112156" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/bf2b688c-e4d9-45f3-ae43-a8b98aa8aed8">
+
+## Fastai
+
+- Introduction
+fastai is a deep learning library based on Python language and PyTorch library. It provides practitioners with high-level components that can quickly and easily provide state-of-the-art results in standard deep learning domains, and provides researchers with low-level components that can be mixed and matched to build new approaches. The resouce in detail can be found on the fastai website in https://docs.fast.ai/.
+
+
+
+<img width="826" alt="2023-05-23_111540" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/2a60718d-977a-4c15-9061-e5af0538f1ef">
+
+
+
+<img width="534" alt="2023-05-23_111136" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/d8a9cfac-e08e-4c1b-b853-07e397f6be0a">
