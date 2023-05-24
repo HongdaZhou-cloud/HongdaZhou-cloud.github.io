@@ -71,5 +71,5 @@ We can get the result:
 
 The plot clearly shows ten clusters with ten different kinds of colors, corresponding to ten different kinds of animals. There is a certain distance between each cluster, so that the model can identify each type of animals clearly. 
 
-Also, it is noticeable that there are some points with a different color from the other points in that cluter. This kind of points clearly do not belong to its cluster, are the loss images.
+Also, it is noticeable that there are some points with a different color from the other points in that cluter. This kind of points clearly do not belong to its cluster, are the loss images of the model.
 
