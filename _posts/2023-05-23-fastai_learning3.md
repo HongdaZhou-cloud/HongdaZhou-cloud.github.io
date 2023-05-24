@@ -37,6 +37,19 @@ We can get the result:
 
 <img width="287" alt="2023-05-23_215512" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/feeb7c0e-e809-4e63-9905-264898d45e96">
 
+Use "fish" images as example, the total number of the actual fish image is 3+1+36=40. Here, total 36 images af fish are predicted correctly, 3 of them are recognised as "bird" and one of them is predicted as "cat" by the model. What's more, two bird images, two kangaroo images and one panda image are mistaken as the "fish". 
+
+So, we can get the confusion matrix for "fish" (348 images in total): 
+
+
+| |Actually Positive| Actually Negative |
+|-|-|-|
+|Predicted Positive|TPs:  36 | FPs:  303 |
+|Predicted Negative|FNs:  5 | TNs:  4 |
+
+
+The other nine kinds of animals can also be done the similar analysis. Here, we can see the bear and tiger images show the highest correct rate; it is may be for the reason that they share great difference with other kinds of animals in term of shapes and colors.
+
 #### t-SNE:
 t-SNE (t-Distributed Stochastic Neighbor Embedding) is a dimensionality reduction technique that is commonly used for visualizing high-dimensional data in a lower-dimensional space, typically 2D or 3D. It aims to preserve the local structure of the data points while revealing global patterns and relationships.
 
