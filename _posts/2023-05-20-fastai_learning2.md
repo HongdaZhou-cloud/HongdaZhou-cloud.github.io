@@ -69,9 +69,9 @@ interp.plot_top_losses(16)
 
 ### Step 3: Design or describe the loss function
 
-A loss function (also known as a cost function or objective function) is a mathematical function that quantifies the discrepancy between predicted and true values. It measures the error or loss incurred by a model's predictions and is used to guide the learning or optimization process.
+A loss function, also known as an objective function or a cost function, is a mathematical function used to measure the error or discrepancy between the predicted output of a machine learning model and the true or target output. The purpose of a loss function is to quantify how well the model is performing during training and to guide the model's optimization process. 
 
-The goal of training a machine learning model is to minimize the loss function, which implies minimizing the discrepancy between predicted and true values. By adjusting the model's parameters or weights, the loss function is minimized, leading to better predictions.
+An ideal loss function should be differentiable, continuous, and have well-behaved gradients. This ensures that optimization algorithms can efficiently find the parameters that minimize the loss. It's also important to choose an appropriate loss function that aligns with the problem at hand and the desired behavior of the model. The selection of a loss function can have a significant impact on the model's final performance.
 
 As discussed in Fastai Learning Blog (1), the "loss" in the image below just refers to the loss function.
 
