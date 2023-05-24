@@ -69,4 +69,7 @@ We can get the result:
 
 <img width="371" alt="2023-05-24_003859" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/38d0a6c8-486c-4d8a-bf1a-d8e7302d7874">
 
+The plot clearly shows ten clusters with ten different kinds of colors, corresponding to ten different kinds of animals. There is a certain distance between each cluster, so that the model can identify each type of animals clearly. 
+
+Also, it is noticeable that there are some points with a different color from the other points in that cluter. This kind of points clearly do not belong to its cluster, are the loss images.
 
