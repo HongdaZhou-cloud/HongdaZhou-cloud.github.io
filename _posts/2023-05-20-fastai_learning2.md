@@ -52,7 +52,7 @@ After that, we can train our model.
 learn = vision_learner(dls, resnet18, metrics=error_rate)
 learn.fine_tune(20)
 ```
-We cansee the results with the code.
+We can see the results with the code.
 
 ```python
 learn.show_results(max_n=16)
@@ -73,4 +73,15 @@ A loss function (also known as a cost function or objective function) is a mathe
 
 The goal of training a machine learning model is to minimize the loss function, which implies minimizing the discrepancy between predicted and true values. By adjusting the model's parameters or weights, the loss function is minimized, leading to better predictions.
 
+As discussed in Fastai Learning Blog (1), the "loss" in the image below just refers to the loss function.
+
+<img width="826" alt="2023-05-23_111540" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/2a60718d-977a-4c15-9061-e5af0538f1ef">
+
 The choice of a loss function depends on the specific task at hand. Different machine learning tasks, such as classification, regression, or generative modeling, require different types of loss functions.
+
+In this project, as we did not select a loss or optimizer function before, fastai already tried to choose the best selection for us. We can check the loss function by calling loss_func directly.
+
+```python
+learn.loss_func
+```
+It can be known that the loss function applied here is "FlattenedLoss of CrossEntropyLoss()".
