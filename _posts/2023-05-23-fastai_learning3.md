@@ -67,10 +67,6 @@ plt.show()
 ```
 We can get the result:
 
-
-
-
-
-
+<img width="371" alt="2023-05-24_003859" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/38d0a6c8-486c-4d8a-bf1a-d8e7302d7874">
 
 
