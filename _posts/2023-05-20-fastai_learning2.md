@@ -90,8 +90,4 @@ It can be known that the loss function applied here is "FlattenedLoss of CrossEn
 
 "FlattenedLoss of CrossEntropyLoss()" operates on flattened inputs and then utilizes the CrossEntropyLoss function for calculating the loss.
 
-The purpose of the FlattenedLoss is to handle flattened input data, which is often required by models. In this image recognition task, the input data typically has a shape of (batch_size, channels, height, width). However, certain models may expect the input to be flattened into a 2D shape (batch_size, num_features) before applying the loss function.
-
-After flattening the Input, the flattened input and target tensors are passed to the CrossEntropyLoss function, which is a function in PyTorch combining the log_softmax operation with the negative log-likelihood loss. The CrossEntropyLoss computes the cross-entropy loss between the predicted class probabilities and the true class labels. It handles the computation of the loss and incorporates any necessary softmax operations internally. 
-
 By using the FlattenedLoss wrapper, we can ensure that the CrossEntropyLoss function is applied correctly to flattened input data. This allows us to use the models that expect flattened input tensors while still benefiting from the functionality and computation of the CrossEntropyLoss function.
