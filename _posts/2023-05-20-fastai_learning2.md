@@ -77,6 +77,8 @@ As discussed in Fastai Learning Blog (1), the "loss" in the image below just ref
 
 <img width="826" alt="2023-05-23_111540" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/2a60718d-977a-4c15-9061-e5af0538f1ef">
 
+Here, we use the inputs and weights to get the final results, and then calculate the loss function to go back and keeping adjust the weights. The model training is not finished until we get very small loss.
+
 The choice of a loss function depends on the specific task at hand. Different machine learning tasks, such as classification, regression, or generative modeling, require different types of loss functions.
 
 In this project, as we did not select a loss or optimizer function before, fastai already tried to choose the best selection for us. We can check the loss function by calling loss_func directly.
