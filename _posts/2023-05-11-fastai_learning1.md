@@ -108,4 +108,5 @@ It works as below:
 Here, the input is the bird image; model is the trained model we gotten before and the output is the result around whether it is a bird.
 
 Reference:
+
 https://course.fast.ai/Lessons/lesson1.html
