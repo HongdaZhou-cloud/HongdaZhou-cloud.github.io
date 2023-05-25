@@ -4,17 +4,20 @@
 ## Neural network and deep learning
 ### Neural network:
 
-Neural networks, specifically, artificial neural networks (ANNs)—mimic the human brain through a set of algorithms. At a basic level, a neural network is comprised of four main components: inputs, weights, a bias or threshold, and an output. Similar to linear regression, the algebraic formula would look something like this:
+
+Neural networks, particularly artificial neural networks (ANNs), are computational models inspired by the human brain's structure and functioning. They consist of interconnected nodes, also known as artificial neurons or perceptrons, which process and transmit information. At a fundamental level, a neural network comprises four main components: inputs, weights, a bias or threshold, and an output. The algebraic formula can be expressed as:
 
 <img width="390" alt="2023-05-23_113145" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/6c045528-f714-470e-9e1b-b52cc846b6cc">
 
 Here, "x" presents inputs; "w" is the weight for the respective inputs and "bias" is the bias or threshold.
 
-If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network. Neural networks tend to have multiple “hidden” layers as part of deep learning algorithms, and each hidden layer has its own activation function.
+If the output of a node surpasses a specified threshold value, the node becomes activated and transmits its output to the next layer in the network. If the output falls below the threshold, no data is propagated to the subsequent layer. 
 
 ### Related to deep learning:
 
-The “deep” in deep learning is referring to the depth of layers in a neural network. A neural network that consists of more than three layers—which would be inclusive of the inputs and the output—can be considered a deep learning algorithm. This is generally represented using the following diagram:
+
+The term "deep" in deep learning refers to the presence of multiple layers in a neural network. A neural network with more than three layers, including the input and output layers, is typically categorized as a deep learning algorithm. This concept is often visualized through a diagram like the following:
+
 
 <img width="374" alt="2023-05-23_112156" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/bf2b688c-e4d9-45f3-ae43-a8b98aa8aed8">
 
@@ -108,5 +111,7 @@ It works as below:
 Here, the input is the bird image; model is the trained model we gotten before and the output is the result around whether it is a bird.
 
 Reference:
+
+https://www.ibm.com/cloud/blog/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks
 
 https://course.fast.ai/Lessons/lesson1.html
