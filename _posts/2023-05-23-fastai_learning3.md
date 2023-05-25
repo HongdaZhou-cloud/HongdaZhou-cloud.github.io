@@ -87,4 +87,5 @@ The plot clearly shows ten clusters with ten different kinds of colors, correspo
 Also, it is noticeable that there are some points with a different color from the other points in that cluter. This kind of points clearly do not belong to its cluster, are the loss images of the model.
 
 Reference:
+
 https://glassboxmedicine.com/2019/02/17/measuring-performance-the-confusion-matrix/
