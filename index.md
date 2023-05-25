@@ -1,7 +1,6 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+
+## Blog
+
+Hello and welcome to this blog. I am Hongda Zhou, a student in the University of Queensland. At present I am learning neural network of deep learning, with the help of the [fast.ai](https://www.fast.ai). This blog would mainly record my learning process fastai.
 
 ![Image of fast.ai logo](images/logo.png)
-
-## This is a title
-
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
