@@ -25,7 +25,7 @@ Scenario 1: Slow convergence with a smaller learning rate
 
 <img width="266" alt="2023-05-25_141517" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/7c9485b2-d1aa-4f61-988a-7c8f635e3515">
 
-This happens when the learning rate is much smaller than the optimal value (α1 << α4). The algorithm takes very small steps to descend the error mountain in order to reach the minimum. So, the convergence happens very slowly and the algorithm takes a lot more time to converge. 
+When the learning rate is much smaller than the optimal value (α1 << α4), the algorithm takes very small steps to descend the error mountain and reach the minimum. Consequently, the convergence happens very slowly, and the algorithm requires a significantly longer time to converge.
 
 Scenario 2: Oscillating around the minimum with a large learning rate
 
@@ -33,8 +33,7 @@ Scenario 2: Oscillating around the minimum with a large learning rate
 
 <img width="418" alt="2023-05-25_141530" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/0ed553f0-ecc1-4ab2-94fe-7940d59a5b63">
 
-
-This happens when the learning rate is larger than the optimal value (α2 > α4). As the algorithm takes large steps to descend the error mountain, the optimizer overshoots the optimal weight in the first step and it overshoots again in the next step as shown in the figure. The algorithm tries to reach the minimum but it is still far away from the minimum. In the final steps (near the minimum), the optimizer is oscillating around the minimum and never reaches the minimum even if we keep running the algorithm for a long period of time with a high number of epochs. 
+In this scenario, the learning rate is larger than the optimal value (α2 > α4). The algorithm takes large steps to descend the error mountain, but it overshoots the optimal weight in the first step and continues to overshoot in subsequent steps. As a result, the optimizer oscillates around the minimum but fails to reach it, even with a high number of epochs.
 
 Scenario 3: Oscillating and divergence with a very large learning rate
 
@@ -43,16 +42,13 @@ Scenario 3: Oscillating and divergence with a very large learning rate
 
 <img width="401" alt="2023-05-25_141542" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/e7aff459-a61c-4cc4-aab8-fc1bf59d04d1">
 
-
-
-
-This happens when the learning rate is much larger than the optimal value (α3 >> α4). Because the learning rate is very large, the algorithm never tries to descend the error mountain. Instead, it overshoots the optimal weight in the first step and continues overshooting in the next steps. After the first few steps, the error starts to increase as the optimizer diverges away from the minimum value. In the final steps, the optimizer is oscillating around a higher error than the started error value. 
+When the learning rate is much larger than the optimal value (α3 >> α4), the algorithm overshoots the optimal weight drastically and diverges away from the minimum. Instead of descending the error mountain, the optimizer continues to overshoot, causing the error to increase and the algorithm to diverge. The optimizer oscillates around a higher error than the initial value and fails to converge.
 
 Scenario 4: Properly convergence with the optimal learning rate
 
-We should avoid all three cases above, especially the third one. The optimal learning rate occurs somewhere between α1 and α2 (α1 < α4 < α2). With the optimal learning rate, the algorithm reaches the minimum in a short period of time with a considerably fewer number of epochs
+To avoid the issues mentioned above, it is crucial to use the optimal learning rate, which lies between α1 and α2 (α1 < α4 < α2). With the optimal learning rate, the algorithm converges to the minimum quickly and requires a significantly fewer number of epochs to achieve satisfactory results. Using the right learning rate allows the algorithm to make precise adjustments to the model's parameters, facilitating efficient convergence and better performance.
 
-In fastai, We can directly use fastai's learn.lr_find() method to find the optimal learning rate.
+In fastai, we can directly use fastai's learn.lr_find() method to find the optimal learning rate.
 
 ```python
 learn.lr_find()
