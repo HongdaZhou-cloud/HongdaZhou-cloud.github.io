@@ -9,7 +9,7 @@ Learning rate in a neural network refers to a hyperparameter that determines the
 
 Choosing an appropriate learning rate is important for efficient and effective training. It requires finding a balance between fast convergence and stable learning. Setting an optimal learning rate often involves experimentation and fine-tuning.
 
-Four different scenarios will be discussed here:
+Four different scenarios will be discussed here in detail:
 
 1. Slow convergence with a smaller learning rate (α1)
 
@@ -19,7 +19,6 @@ Four different scenarios will be discussed here:
 
 4. Properly convergence with the optimal learning rate (α4)
 
-Let’s discuss each scenario in detail.
 
 Scenario 1: Slow convergence with a smaller learning rate
 
