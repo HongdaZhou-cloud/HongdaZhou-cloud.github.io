@@ -67,4 +67,5 @@ It suggests that a learning rate of approximately 0.00010964782268274575 is reco
 Once we have identified the optimal learning rate, we can proceed with training our model using that learning rate or adjust it based on our specific requirements.
 
 Reference:
+
 https://towardsdatascience.com/how-to-choose-the-optimal-learning-rate-for-neural-networks-362111c5c783
