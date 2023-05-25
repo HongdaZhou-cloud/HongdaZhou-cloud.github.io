@@ -106,3 +106,6 @@ It works as below:
 <img width="534" alt="2023-05-23_111136" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/d8a9cfac-e08e-4c1b-b853-07e397f6be0a">
 
 Here, the input is the bird image; model is the trained model we gotten before and the output is the result around whether it is a bird.
+
+Reference:
+https://course.fast.ai/Lessons/lesson1.html
