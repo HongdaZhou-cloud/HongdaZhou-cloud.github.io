@@ -35,7 +35,9 @@ interp.plot_confusion_matrix()
 ```
 We can get the result:
 
-<img width="287" alt="2023-05-23_215512" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/feeb7c0e-e809-4e63-9905-264898d45e96">
+<img width="349" alt="2023-05-25_234245" src="https://github.com/HongdaZhou-cloud/HongdaZhou-cloud.github.io/assets/132418400/08867190-5e8a-4f13-9522-e52dbde5e72c">
+
+
 
 Use "fish" images as example, the total number of the actual fish image is 3+1+36=40. Here, total 36 images af fish are predicted correctly, 3 of them are recognised as "bird" and one of them is predicted as "cat" by the model. What's more, two bird images, two kangaroo images and one panda image are mistaken as the "fish". 
 
