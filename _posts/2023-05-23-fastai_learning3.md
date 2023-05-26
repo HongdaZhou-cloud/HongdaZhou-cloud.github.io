@@ -46,8 +46,8 @@ So, we can get the confusion matrix for "fish" (348 images in total):
 
 | |Actually Positive| Actually Negative |
 |-|-|-|
-|Predicted Positive|TPs:  36 | FPs:  303 |
-|Predicted Negative|FNs:  5 | TNs:  4 |
+|Predicted Positive|TPs:  36 | FPs:  5 |
+|Predicted Negative|FNs:  4 | TNs:  303 |
 
 
 The other nine kinds of animals can also be done the similar analysis. Here, we can see the bear and tiger images show the highest correct rate; it is may be for the reason that they share great difference with other kinds of animals in term of shapes and colors.
